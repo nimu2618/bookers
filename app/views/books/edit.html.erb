@@ -1,18 +1,18 @@
 <html>
   <h1>Editing Book</h1>
 
-<%= form_with model: @book, url: update_book_path(@book.id),method: :patch do |f| %>
+<%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
 
   <h4>Title</h4>
   <%= f.text_field :title %>
 
   <h4>Body</h4>
   <%= f.text_area :body %>
-
+  <h4></h4>
   <%= f.submit'Update Book' %>
 <% end %>
 
-  <a class="show" href="books/:id">Show</a>
+  <a class="show" href="/books/:id">Show</a>
   |
   <a class="back" href="/books">Back</a>
 </html>
