@@ -1,14 +1,15 @@
-        <p id="notice"><%= notice %></p>
-        <p>
-          <b>Title:</b><%= @book.title %>
-        </p>
-        <p>
-          <b>Body:</b><%= @book.body %>
-        </p>
-        <span>
-          <%= link_to "edit",edit_book_path(@book.id) %>
-        </span>
-        <span>|</span>
-        <span>
-          <%= link_to "back","/books" %>
-        </span>
+<p id="notice"><%= notice %></p>
+  
+<p>
+  <b>Title:</b><%= @book.title %>
+</p>
+<p>
+  <b>Body:</b><%= @book.body %>
+</p>
+<span>
+  <%= link_to "edit",edit_book_path(@book.id) %>
+</span>
+<span>|</span>
+<span>
+  <%= link_to "back","/books" %>
+</span>
